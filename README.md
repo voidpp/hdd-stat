@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/voidpp/hdd-stat.svg?branch=master)](https://travis-ci.org/voidpp/hdd-stat)
+
 About
 --
 Microservice and cli tool for get info about hdds.
