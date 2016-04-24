@@ -1,5 +1,4 @@
 import unittest
-import psutil
 from unittest.mock import patch
 from collections import namedtuple
 
@@ -23,7 +22,6 @@ class TestStat(unittest.TestCase):
 
         # Assert
         self.assertDictEqual(labels, {'/dev/sdc1': 'Hyperion', '/dev/sdf1': 'Janus', '/dev/mmcblk0p2': 'trusty'})
-
 
     def test_get_full_stat(self):
         # Arrange
