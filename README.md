@@ -12,7 +12,7 @@ Usage
 --
 CLI:
 ```bash
-$ hdd-stat
+hdd-stat
 ```
 uWSGI example config:
 ```ini
