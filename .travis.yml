@@ -1,6 +1,5 @@
 language: python
 python:
-    - "2.7"
     - "3.4"
 install: "pip install -r tests/requirements.txt"
 script: nosetests --with-coverage --cover-package=hdd_stat
