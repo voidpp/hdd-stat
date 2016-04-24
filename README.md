@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/voidpp/hdd-stat.svg?branch=master)](https://travis-ci.org/voidpp/hdd-stat)
+[![Coverage Status](https://coveralls.io/repos/github/voidpp/hdd-stat/badge.svg?branch=master)](https://coveralls.io/github/voidpp/hdd-stat?branch=master)
 
 About
 --
