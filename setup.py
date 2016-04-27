@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name = "hdd-stat",
     description = "",
-    version = "1.0.0",
+    version = "1.1.0",
     author = 'Lajos Santa',
     author_email = 'santa.lajos@coldline.hu',
     url = '',
