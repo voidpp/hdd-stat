@@ -7,7 +7,7 @@ from collections import namedtuple
 partition = namedtuple('partition', ['device', 'label', 'mount', 'used', 'total', 'free', 'percent'])
 
 def get_labels():
-    prog = re.compile('(\/dev\/[a-z0-9]{3,}) on .+ \[(.+)\]')
+    prog = re.compile('(\/dev\/[a-z0-9A-Z\/]{3,}) on .+ \[(.+)\]')
     mounts = subprocess.check_output(['mount','-l']).decode('utf8')
     disks = {}
     for line in mounts.split('\n'):
@@ -23,14 +23,12 @@ def get_full_stat(labels):
     data = []
 
     for part in partitions:
-        if part.device not in labels:
-            continue
 
         usage = psutil.disk_usage(part.mountpoint)
 
         data.append(partition(
             part.device,
-            labels[part.device],
+            labels.get(part.device),
             part.mountpoint,
             usage.used,
             usage.total,
